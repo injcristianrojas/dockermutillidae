@@ -17,10 +17,9 @@ Or specify it as environment variable:
 
 Additional information about parent image https://registry.hub.docker.com/u/tutum/lamp/
 
-If you're using Docker Compose, run the image using:
-```docker-compose up```
-
-When done, restart the image using ```docker-compose rm```
+If you're using Docker Compose:
+* Run the image using: ```docker-compose up```
+* When done, restart the image using ```docker-compose rm```
 
 
 About NOWASP
