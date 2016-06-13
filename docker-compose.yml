@@ -2,7 +2,7 @@ version: '2'
 
 services:
   nowasp:
-    image: citizenstig/nowasp
+    build: .
     ports:
       - "80:80"
       - "3306:3306"
