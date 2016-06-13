@@ -17,12 +17,17 @@ Or specify it as environment variable:
 
 Additional information about parent image https://registry.hub.docker.com/u/tutum/lamp/
 
+If you're using Docker Compose, run the image using:
+```docker-compose up```
+
+When done, restart the image using ```docker-compose rm```
+
 
 About NOWASP
 ================
 OWASP Mutillidae II is a free, open source, deliberately vulnerable web-application providing a target for web-security enthusiest. Mutillidae can be installed on Linux and Windows using LAMP, WAMP, and XAMMP. It is pre-installed on SamuraiWTF, Rapid7 Metasploitable-2, and OWASP BWA. The existing version can be updated on these platforms. With dozens of vulns and hints to help the user; this is an easy-to-use web hacking environment designed for labs, security enthusiast, classrooms, CTF, and vulnerability assessment tool targets. Mutillidae has been used in graduate security courses, corporate web sec training courses, and as an "assess the assessor" target for vulnerability assessment software.
 
-Instructional videos are available on the ["webpwnized" YouTube channel](https://www.youtube.com/user/webpwnized) 
+Instructional videos are available on the ["webpwnized" YouTube channel](https://www.youtube.com/user/webpwnized)
 Project/video updates tweeted to https://twitter.com/webpwnized.
 
 [NOWASP (Mutillidae) Web Site](https://sourceforge.net/projects/mutillidae/)
