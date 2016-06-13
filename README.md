@@ -1,38 +1,59 @@
-Description
-================
+# Description
 
-Docker container for OWASP Mutillidae II Web Pen-Test Practice Application
+Docker container for OWASP Mutillidae II Web Pen-Test Practice Application.
+Based on [citizenstig's repo](https://github.com/citizen-stig/dockermutillidae).
 
+Requirements:
 
-Quick start
-================
-Pull image:
-```docker pull citizenstig/nowasp```
+* Docker
+* Docker Compose (optional)
+
+# Quick start
+
+## Normal Docker mode
+
+First, pull image:
+
+```shell
+docker pull injcristianrojas/nowasp
+```
 
 Start with random mysql password:
-```docker run -d -p 80:80 citizenstig/nowasp```
 
-Or specify it as environment variable:
-```sudo docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS="Chang3ME!" citizenstig/nowasp```
+```shell
+docker run -d -p 80:80 injcristianrojas/nowasp
+```
 
-Additional information about parent image https://registry.hub.docker.com/u/tutum/lamp/
+Or specify the password as environment variable:
+```shell
+sudo docker run -d -p 80:80 -p 3306:3306 -e MYSQL_PASS="Chang3ME!" injcristianrojas/nowasp
+```
+
+## Using Docker Compose
 
 If you're using Docker Compose:
-* Run the image using: ```docker-compose up```
-* When done, restart the image using ```docker-compose rm```
+
+Run the image using:
+
+```shell
+docker-compose up
+```
+
+When done, turn the image back to its starting state using
+
+```shell
+docker-compose rm
+```
 
 
-About NOWASP
-================
+# About NOWASP
+
 OWASP Mutillidae II is a free, open source, deliberately vulnerable web-application providing a target for web-security enthusiest. Mutillidae can be installed on Linux and Windows using LAMP, WAMP, and XAMMP. It is pre-installed on SamuraiWTF, Rapid7 Metasploitable-2, and OWASP BWA. The existing version can be updated on these platforms. With dozens of vulns and hints to help the user; this is an easy-to-use web hacking environment designed for labs, security enthusiast, classrooms, CTF, and vulnerability assessment tool targets. Mutillidae has been used in graduate security courses, corporate web sec training courses, and as an "assess the assessor" target for vulnerability assessment software.
 
 Instructional videos are available on the ["webpwnized" YouTube channel](https://www.youtube.com/user/webpwnized)
 Project/video updates tweeted to https://twitter.com/webpwnized.
 
-[NOWASP (Mutillidae) Web Site](https://sourceforge.net/projects/mutillidae/)
-
-NOWASP Features
-================
+NOWASP Features:
 * Has over 35 vulnerablities and challenges. Contains at least one vulnearbility for each of the OWASP Top Ten 2007 and 2010
 * Actually Vulnerable (User not asked to enter “magic” statement)
 * Mutillidae can be installed on Linux, Windows XP, and Windows 7 using XAMMP making it easy for users who do not want to install or administrate their own webserver. Mutillidae is confirmed to work on XAMPP, WAMP, and LAMP. XAMPP is the "default" deployment.
@@ -53,3 +74,5 @@ NOWASP Features
 * Updates tweeted to @webpwnized
 * Updated frequently
 * Project Whitepaper: http://www.giac.org/paper/gwapt/3387/introduction-owasp-mutillidae-ii-web-pen-test-training-environment/126917
+
+More info on [NOWASP (Mutillidae)'s Website](https://sourceforge.net/projects/mutillidae/).

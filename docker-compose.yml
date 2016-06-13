@@ -2,7 +2,7 @@ version: '2'
 
 services:
   nowasp:
-    build: .
+    image: injcristianrojas/nowasp
     ports:
       - "80:80"
       - "3306:3306"
