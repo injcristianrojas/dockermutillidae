@@ -5,3 +5,4 @@ services:
     image: citizenstig/nowasp
     ports:
       - "80:80"
+      - "3306:3306"
